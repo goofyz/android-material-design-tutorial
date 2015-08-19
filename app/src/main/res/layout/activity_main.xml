@@ -22,6 +22,7 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
         <TextView
+            android:id="@+id/content_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World" />
