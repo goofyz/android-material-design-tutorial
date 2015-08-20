@@ -2,8 +2,6 @@ package com.thirtysparks.tutorial.designlib;
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,8 +14,12 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+    private static final String NAV_ITEM_ID = "nav_index";
+
     DrawerLayout drawerLayout;
     TextView contentView;
+
+    private int navItemId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         NavigationView view = (NavigationView) findViewById(R.id.navigation_view);
         view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override public boolean onNavigationItemSelected(MenuItem menuItem) {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
                 Toast.makeText(MainActivity.this, menuItem.getTitle() + " pressed", Toast.LENGTH_LONG).show();
-                contentView.setText(menuItem.getTitle());
+                navigateTo(menuItem);
 
-                menuItem.setChecked(true);
                 drawerLayout.closeDrawers();
                 return true;
             }
@@ -55,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
 
         drawerLayout.setDrawerListener(actionBarDrawerToggle);
         actionBarDrawerToggle.syncState();
+
+        if(null != savedInstanceState){
+            navItemId = savedInstanceState.getInt(NAV_ITEM_ID, R.id.navigation_item_1);
+        }
+        else{
+            navItemId = R.id.navigation_item_1;
+        }
+
+        navigateTo(view.getMenu().findItem(navItemId));
     }
 
     @Override
@@ -77,5 +88,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void navigateTo(MenuItem menuItem){
+        contentView.setText(menuItem.getTitle());
+
+        navItemId = menuItem.getItemId();
+        menuItem.setChecked(true);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(NAV_ITEM_ID, navItemId);
     }
 }
