@@ -1,5 +1,6 @@
 package com.thirtysparks.tutorial.designlib;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         initDrawerLayout();
         initNavView(savedInstanceState);
+        initFab();
     }
 
     @Override
@@ -96,6 +98,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         navigateTo(view.getMenu().findItem(navItemId));
+    }
+
+    private void initFab(){
+        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Fab clicked", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void navigateTo(MenuItem menuItem){
