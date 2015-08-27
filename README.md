@@ -12,4 +12,8 @@ Adding `DrawerLayout` and `NavigationView` to create the Navigation Drawer.
 
 ## Part 2: Floating Action Button
 
-Soon...
+Add `FloatingActionButton` to `MainActivity`
+
+[Tutorial Part 2](http://blog.30sparks.com/material-design-2-floating-action-button/)
+
+## Part 3: Coming soon
