@@ -1,7 +1,9 @@
 package com.thirtysparks.tutorial.designlib;
 
+import android.app.AlertDialog;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -105,7 +107,17 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Fab clicked", Toast.LENGTH_LONG).show();
+                Snackbar.make(contentView, "I am snackbar", Snackbar.LENGTH_SHORT)
+                        .setAction("Undo", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                new AlertDialog.Builder(MainActivity.this)
+                                        .setMessage("Undo pressed")
+                                        .setNeutralButton("OK", null)
+                                        .show();
+                            }
+                        })
+                        .show();
             }
         });
     }
