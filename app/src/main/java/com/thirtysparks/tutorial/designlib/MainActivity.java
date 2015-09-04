@@ -1,6 +1,7 @@
 package com.thirtysparks.tutorial.designlib;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -123,10 +124,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void navigateTo(MenuItem menuItem){
-        contentView.setText(menuItem.getTitle());
+        switch(menuItem.getItemId()){
+            case R.id.navigation_item_2:
+                startActivity(new Intent(this, AnotherFabActivity.class));
+                break;
+            default:
+                contentView.setText(menuItem.getTitle());
 
-        navItemId = menuItem.getItemId();
-        menuItem.setChecked(true);
+                navItemId = menuItem.getItemId();
+                menuItem.setChecked(true);
+        }
     }
 
     @Override
