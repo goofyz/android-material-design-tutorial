@@ -3,6 +3,7 @@ package com.thirtysparks.tutorial.designlib;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +17,9 @@ public class AnotherFabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_another_fab);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         final TextView contentView = (TextView)findViewById(R.id.content_view);
         FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.fab);
