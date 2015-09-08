@@ -26,6 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="?attr/actionBarSize"
+            android:padding="16dp"
             android:text="Hello World" />
 
         <android.support.design.widget.FloatingActionButton
