@@ -20,7 +20,10 @@
         android:id="@+id/content_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:text="@string/another_fab_content"
         />
 
     <com.github.clans.fab.FloatingActionButton

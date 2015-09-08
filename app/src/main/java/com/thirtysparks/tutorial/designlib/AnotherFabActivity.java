@@ -26,7 +26,7 @@ public class AnotherFabActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(contentView, "Snackbar!", Snackbar.LENGTH_SHORT).show();
+                Snackbar.make(contentView, R.string.another_fab_snackbar, Snackbar.LENGTH_SHORT).show();
             }
         });
     }
