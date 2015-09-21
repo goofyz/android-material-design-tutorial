@@ -127,6 +127,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_item_2:
                 startActivity(new Intent(this, AnotherFabActivity.class));
                 break;
+            case R.id.navigation_item_3:
+                startActivity(new Intent(this, AppBarActivity.class));
+                break;
             default:
                 contentView.setText(menuItem.getTitle());
 

@@ -13,7 +13,7 @@
         <item
             android:id="@+id/navigation_item_3"
             android:icon="@drawable/ic_launcher"
-            android:title="Items 3" />
+            android:title="AppBarLayout Activity" />
         <item
             android:id="@+id/navigation_item_4"
             android:icon="@drawable/ic_launcher"
