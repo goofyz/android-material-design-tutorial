@@ -20,6 +20,9 @@
             android:name=".AnotherFabActivity"
             android:label="@string/title_activity_another_fab" >
         </activity>
+        <activity
+            android:name=".AppBarActivity"
+            android:label="@string/title_activity_appbar" />
     </application>
 
 </manifest>

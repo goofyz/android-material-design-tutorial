@@ -8,6 +8,7 @@
     <string name="openDrawer">Open Drawer</string>
     <string name="closeDrawer">Close Drawer</string>
     <string name="title_activity_another_fab">Another FAB</string>
+    <string name="title_activity_appbar">AppBarLayout Activity</string>
 
     <string name="another_fab_content">Material Design Tutorial 3 - \nSnackbar and CoordinatorLayout. \n\nDemo Activity using Open Source FAB implementation.  \n\nby goofyz@30sparks</string>
     <string name="another_fab_snackbar">Snackbar Tutorial @ 30sparks</string>
