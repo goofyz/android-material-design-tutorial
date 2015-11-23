@@ -25,4 +25,5 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:+'
     compile 'com.android.support:design:22.2.1'
     compile 'com.github.clans:fab:1.6.0'
+    compile 'jp.wasabeef:recyclerview-animators:1.2.0@aar'
 }
