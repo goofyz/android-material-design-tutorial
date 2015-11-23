@@ -28,6 +28,9 @@ public class AppBarActivity extends AppCompatActivity {
         adapter = new ContactsAdapter(mContacts);
         rvContacts.setAdapter(adapter);
         rvContacts.setLayoutManager(new LinearLayoutManager(this));
+
+        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
+        rvContacts.addItemDecoration(itemDecoration);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
