@@ -22,5 +22,11 @@ Use `Snackbar` to alert user and `CoordinatorLayout` to play nice with `Floating
 
 [Tutorial Part 3](http://blog.30sparks.com/material-design-3-snackbar-coordinatorlayout/?utm_source=github&utm_medium=web&utm_campaign=material)
 
-## Part 4: Coming Soon
+## Part 4: `RecyclerView`
+
+Use `RecyclerView` to replace `ListView`.
+
+[Tutorial Part 4](http://blog.30sparks.com/material-design-4-recyclerview/?utm_source=github&utm_medium=web&utm_campaign=material)
+
+## Part 5: Coming Soon
 
