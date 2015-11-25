@@ -2,6 +2,7 @@ package com.thirtysparks.tutorial.designlib;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -24,10 +25,14 @@ public class AppBarActivity extends AppCompatActivity {
 
         mContacts = Contact.generateSampleList();
 
+        RecyclerView.LayoutManager layoutManager;
+        //layoutManager = new GridLayoutManager(this, 3);
+        layoutManager = new LinearLayoutManager(this);
+
         RecyclerView rvContacts = (RecyclerView) findViewById(R.id.recyclerView);
         adapter = new ContactsAdapter(mContacts);
         rvContacts.setAdapter(adapter);
-        rvContacts.setLayoutManager(new LinearLayoutManager(this));
+        rvContacts.setLayoutManager(layoutManager);
 
         RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
         rvContacts.addItemDecoration(itemDecoration);
