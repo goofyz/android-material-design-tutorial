@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
-            app:contentScrim="#ff4444"
+            app:contentScrim="?colorPrimary"
             app:expandedTitleMarginStart="4dp"
             app:expandedTitleMarginEnd="8dp"
             >
@@ -54,8 +54,7 @@
         android:layout_gravity="bottom|right|end"
         android:src="@drawable/ic_add_circle_outline_white"
         android:elevation="6dp"
-        app:layout_anchor="@id/appbar_layout"
-        app:layout_anchorGravity="bottom|right|end"
+        app:layout_behavior="com.thirtysparks.tutorial.designlib.ScrollingFabBehavior"
         app:pressedTranslationZ="12dp" />
 
 </android.support.design.widget.CoordinatorLayout>
