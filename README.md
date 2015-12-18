@@ -28,5 +28,10 @@ Use `RecyclerView` to replace `ListView`.
 
 [Tutorial Part 4](http://blog.30sparks.com/material-design-4-recyclerview/?utm_source=github&utm_medium=web&utm_campaign=material)
 
-## Part 5: Coming Soon
+## Part 5: `AppBarLayout`
 
+Animate the `Toolbar` with `AppBarLayout`.
+
+[Tutorial Part 5](http://blog.30sparks.com/material-design-5-appbarlayout/?utm_source=github&utm_medium=web&utm_campaign=material)
+
+## Part 6: Coming soon...
