@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TextInputLayout;
 import android.support.v4.widget.DrawerLayout;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         initDrawerLayout();
         initNavView(savedInstanceState);
         initFab();
+        initEditText();
     }
 
     @Override
@@ -142,5 +146,26 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(NAV_ITEM_ID, navItemId);
+    }
+
+    private void initEditText(){
+        final TextInputLayout nameLayout = (TextInputLayout)findViewById(R.id.til_et_name);
+        final TextInputLayout messageLayout = (TextInputLayout)findViewById(R.id.til_et_message);
+        final EditText nameEditText = (EditText)findViewById(R.id.et_name);
+        final EditText messageEditText = (EditText)findViewById(R.id.et_message);
+        final Button button = (Button) findViewById(R.id.btn_submit);
+
+        nameLayout.setErrorEnabled(true);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(nameEditText.length() == 0){
+                    nameLayout.setError("Error in name input");
+                }
+                else{
+                    nameLayout.setError(null);
+                }
+            }
+        });
     }
 }
