@@ -64,6 +64,15 @@
                         android:hint="Message"
                         />
             </android.support.design.widget.TextInputLayout>
+
+            <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/til_et_message"
+                    android:padding="4dp"
+                    android:text="Submit"
+                    />
         </RelativeLayout>
 
 
