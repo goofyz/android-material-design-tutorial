@@ -8,6 +8,18 @@
         <item name="android:windowActionModeOverlay">true</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">#FF4400</item>
+        <item name="colorAccent">#0000FF</item>
     </style>
+
+    <style name="TextInputError" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FF00FF</item>
+    </style>
+
+    <style name="TextInputHint" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#AA2288</item>
+    </style>
+
 
 </resources>

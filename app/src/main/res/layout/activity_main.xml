@@ -40,6 +40,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/content_view"
+                    app:errorEnabled="true"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:hintTextAppearance="@style/TextInputHint"
+                    app:errorTextAppearance="@style/TextInputError"
                     >
 
                 <EditText
