@@ -155,7 +155,6 @@ public class MainActivity extends AppCompatActivity {
         final EditText messageEditText = (EditText)findViewById(R.id.et_message);
         final Button button = (Button) findViewById(R.id.btn_submit);
 
-        nameLayout.setErrorEnabled(true);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
