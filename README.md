@@ -34,4 +34,10 @@ Animate the `Toolbar` with `AppBarLayout`.
 
 [Tutorial Part 5](http://blog.30sparks.com/material-design-5-appbarlayout/?utm_source=github&utm_medium=web&utm_campaign=material)
 
-## Part 6: Coming soon...
+## Part 6: `TextInputLayout`
+
+Enhance the `EditText` with `TextInputLayout`
+
+[Tutorial Part 6](http://blog.30sparks.com/material-design-6-textinputlayout/?utm_source=github&utm_medium=web&utm_campaign=material)
+
+## Part 7: Coming soon...
