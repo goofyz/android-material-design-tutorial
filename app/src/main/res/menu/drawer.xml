@@ -7,17 +7,17 @@
             android:icon="@drawable/ic_launcher"
             android:title="Navigation Items 1" />
         <item
-            android:id="@+id/navigation_item_2"
+            android:id="@+id/navigation_item_another_fab"
             android:icon="@drawable/ic_launcher"
             android:title="Another FAB" />
         <item
-            android:id="@+id/navigation_item_3"
+            android:id="@+id/navigation_item_appbar"
             android:icon="@drawable/ic_launcher"
             android:title="AppBarLayout Activity" />
         <item
-            android:id="@+id/navigation_item_4"
+            android:id="@+id/navigation_item_tab"
             android:icon="@drawable/ic_launcher"
-            android:title="Items 4" />
+            android:title="Tab Layout Activity" />
         <item
             android:id="@+id/navigation_item_5"
             android:icon="@drawable/ic_launcher"

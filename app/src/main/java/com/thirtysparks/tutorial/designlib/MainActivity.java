@@ -128,11 +128,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void navigateTo(MenuItem menuItem){
         switch(menuItem.getItemId()){
-            case R.id.navigation_item_2:
+            case R.id.navigation_item_another_fab:
                 startActivity(new Intent(this, AnotherFabActivity.class));
                 break;
-            case R.id.navigation_item_3:
+            case R.id.navigation_item_appbar:
                 startActivity(new Intent(this, AppBarActivity.class));
+                break;
+            case R.id.navigation_item_tab:
+                startActivity(new Intent(this, TabActivity.class));
                 break;
             default:
                 contentView.setText(menuItem.getTitle());

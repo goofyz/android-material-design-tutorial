@@ -23,6 +23,10 @@
         <activity
             android:name=".AppBarActivity"
             android:label="@string/title_activity_appbar" />
+        <activity
+            android:name=".TabActivity"
+            android:label="@string/title_activity_tab" >
+        </activity>
     </application>
 
 </manifest>
