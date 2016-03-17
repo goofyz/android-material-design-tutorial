@@ -20,7 +20,8 @@
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabMode="fixed"
+            app:tabMode="scrollable"
+            style="@style/MyTabLayout"
             />
 
     <android.support.v4.view.ViewPager
