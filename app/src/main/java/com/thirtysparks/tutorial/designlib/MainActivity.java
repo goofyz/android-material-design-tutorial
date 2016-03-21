@@ -137,6 +137,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.navigation_item_tab:
                 startActivity(new Intent(this, TabActivity.class));
                 break;
+            case R.id.navigation_item_vpi:
+                startActivity(new Intent(this, ViewPagerIndicatorActivity.class));
+                break;
             default:
                 contentView.setText(menuItem.getTitle());
 

@@ -19,9 +19,9 @@
             android:icon="@drawable/ic_launcher"
             android:title="Tab Layout Activity" />
         <item
-            android:id="@+id/navigation_item_5"
+            android:id="@+id/navigation_item_vpi"
             android:icon="@drawable/ic_launcher"
-            android:title="Items 5" />
+            android:title="ViewPagerIndicator Activity" />
         <item
             android:id="@+id/navigation_item_6"
             android:icon="@drawable/ic_launcher"

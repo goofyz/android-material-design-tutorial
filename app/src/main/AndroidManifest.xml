@@ -27,6 +27,10 @@
             android:name=".TabActivity"
             android:label="@string/title_activity_tab" >
         </activity>
+        <activity
+            android:name=".ViewPagerIndicatorActivity"
+            android:label="@string/title_activity_view_pager_indicator" >
+        </activity>
     </application>
 
 </manifest>

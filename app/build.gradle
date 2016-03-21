@@ -26,4 +26,5 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.github.clans:fab:1.6.0'
     compile 'jp.wasabeef:recyclerview-animators:1.2.0@aar'
+    compile 'com.viewpagerindicator:library:2.4.1@aar'
 }

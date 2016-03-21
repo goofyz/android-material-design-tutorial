@@ -15,4 +15,5 @@
     <string name="another_fab_content">Material Design Tutorial 3 - \nSnackbar and CoordinatorLayout. \n\nDemo Activity using Open Source FAB implementation.  \n\nby goofyz@30sparks</string>
     <string name="another_fab_snackbar">Snackbar Tutorial @ 30sparks</string>
     <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_view_pager_indicator">ViewPagerIndicatorActivity</string>
 </resources>
